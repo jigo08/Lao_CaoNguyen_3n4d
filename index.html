@@ -386,20 +386,32 @@ tr:hover td{background:rgba(232,81,10,.04)}
 /* ============================================================
    FOOTER
 ============================================================ */
-footer{background:var(--dark);color:rgba(255,255,255,.7);padding:48px clamp(16px,5vw,60px) 28px}
-.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;margin-bottom:36px}
-footer h4{color:#fff;font-weight:800;font-size:15px;margin-bottom:14px}
-footer p,footer a{font-size:13.5px;line-height:1.8;color:rgba(255,255,255,.65)}
-footer a:hover{color:var(--orange)}
-.footer-logo{height:48px;margin-bottom:16px;filter:brightness(1.2)}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;text-align:center;font-size:12.5px;color:rgba(255,255,255,.4)}
+footer{background:#0d1f13;color:rgba(255,255,255,.75);padding:56px clamp(16px,5vw,60px) 28px}
+.ft-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:40px;margin-bottom:40px}
+.ft-brand img{height:52px;margin-bottom:14px;background:#fff;padding:4px 12px;border-radius:8px;object-fit:contain}
+.ft-brand p{font-size:14px;line-height:1.75;color:rgba(255,255,255,.55)}
+.ft-col h4{color:#fff;font-weight:800;font-size:14px;margin-bottom:16px}
+.ft-col ul{list-style:none}
+.ft-col ul li{margin-bottom:9px}
+.ft-col ul li a{color:rgba(255,255,255,.55);font-size:13.5px;transition:color .2s}
+.ft-col ul li a:hover{color:var(--orange2)}
+.ft-contact{font-size:13.5px;color:rgba(255,255,255,.6);line-height:2}
+.ft-contact a{color:var(--orange2)}
+.ft-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:12px;color:rgba(255,255,255,.35)}
+.socials{display:flex;gap:10px}
+.socials a{
+  width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.2);
+  display:flex;align-items:center;justify-content:center;
+  color:rgba(255,255,255,.55);font-size:15px;transition:all .2s
+}
+.socials a:hover{background:var(--orange);border-color:var(--orange);color:#fff}
 
 /* ============================================================
    RESPONSIVE
 ============================================================ */
 @media(max-width:900px){
   .svc-grid{grid-template-columns:1fr}
-  .footer-grid{grid-template-columns:1fr 1fr}
+  .ft-grid{grid-template-columns:1fr 1fr}
   .gal-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}
   .g1,.g2,.g3,.g4,.g5{grid-column:auto;grid-row:auto}
 }
@@ -409,7 +421,7 @@ footer a:hover{color:var(--orange)}
   .day-card{grid-template-columns:72px 1fr}
   .fg{grid-template-columns:1fr}
   .fi.full{grid-column:span 1}
-  .footer-grid{grid-template-columns:1fr}
+  .ft-grid{grid-template-columns:1fr}
   .gal-grid{grid-template-columns:1fr;grid-template-rows:auto}
 }
 
@@ -554,7 +566,7 @@ footer a:hover{color:var(--orange)}
     <div class="hl-card">
       <img class="hl-img"
            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Tad_Fane_waterfall%2C_Laos.jpg/1280px-Tad_Fane_waterfall%2C_Laos.jpg"
-           onerror="this.src='https://vietkite.com.vn/wp-content/uploads/2024/12/thac-tad-fane-bolaven-lao.jpg'"
+           onerror="this.src='https://mia.vn/media/uploads/blog-du-lich/tad-fane-5-1733791327.jpg'"
            alt="Thác Tad Fane">
       <h3>🌊 Thác Tad Fane</h3>
       <p>Thác đôi hùng vĩ được ví như mái tóc người con gái Nam Lào – nơi tổ chức zipline, leo núi, cà phê miễn phí.</p>
@@ -601,7 +613,7 @@ footer a:hover{color:var(--orange)}
       </div>
       <div class="g-item g2">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Tad_Fane_waterfall%2C_Laos.jpg/1280px-Tad_Fane_waterfall%2C_Laos.jpg"
-             onerror="this.src='https://vietkite.com.vn/wp-content/uploads/2024/12/thac-tad-fane-bolaven-lao.jpg'"
+             onerror="this.src='https://mia.vn/media/uploads/blog-du-lich/tad-fane-5-1733791327.jpg'"
              alt="Thác Tad Fane">
         <div class="g-caption">Thác Tad Fane hùng vĩ</div>
       </div>
@@ -962,9 +974,9 @@ footer a:hover{color:var(--orange)}
       <p class="rev-text">"Tour Bolaven cực kỳ ấn tượng! Cao nguyên mát mẻ, thác nước đẹp tuyệt vời, đặc biệt là cà phê Paksong uống tại chỗ ngon hơn hẳn khi về nước. VietKite tổ chức rất chuyên nghiệp, hướng dẫn viên nhiệt tình và vui vẻ!"</p>
       <div class="rev-author">
         <img class="rev-avatar"
-             src="https://ui-avatars.com/api/?name=Tran+Thi+B&background=1A7D3C&color=fff&size=44"
+             src="https://ui-avatars.com/api/?name=Tran+Bao+Thy&background=1A7D3C&color=fff&size=44"
              alt="Trần Thị B">
-        <div><div class="rev-name">Trần Thị B</div><div class="rev-loc">TP.HCM · Tháng 6/2025</div></div>
+        <div><div class="rev-name">Trần Bảo Thy</div><div class="rev-loc">TP.HCM · Tháng 6/2025</div></div>
       </div>
     </div>
     <div class="rev-card">
@@ -972,9 +984,9 @@ footer a:hover{color:var(--orange)}
       <p class="rev-text">"Wat Phou thật sự không thua gì Angkor Wat. Không khí Bolaven mát mẻ như Đà Lạt, rất thích hợp cho gia đình có trẻ nhỏ. Xe thoải mái, cơm ngon, lịch trình hợp lý. Sẽ tiếp tục đặt tour VietKite!"</p>
       <div class="rev-author">
         <img class="rev-avatar"
-             src="https://ui-avatars.com/api/?name=Nguyen+Van+C&background=E8510A&color=fff&size=44"
+             src="https://ui-avatars.com/api/?name=Ngo+Chi+Cuong&background=E8510A&color=fff&size=44"
              alt="Nguyễn Văn C">
-        <div><div class="rev-name">Nguyễn Văn C</div><div class="rev-loc">Bình Dương · Tháng 8/2025</div></div>
+        <div><div class="rev-name">Ngô Chí Cường</div><div class="rev-loc">Bình Dương · Tháng 8/2025</div></div>
       </div>
     </div>
     <div class="rev-card">
@@ -982,9 +994,9 @@ footer a:hover{color:var(--orange)}
       <p class="rev-text">"Thác Tad Fane đẹp không kém bất kỳ thác nào ở Việt Nam mà mình đã đi. Làng dân tộc Katu là trải nghiệm văn hoá rất độc đáo, không thể tìm được ở đâu khác. Cảm ơn VietKite đã tổ chức tour tuyệt vời!"</p>
       <div class="rev-author">
         <img class="rev-avatar"
-             src="https://ui-avatars.com/api/?name=Le+Thi+D&background=7C3AED&color=fff&size=44"
+             src="https://ui-avatars.com/api/?name=Lam+Dieu&background=7C3AED&color=fff&size=44"
              alt="Lê Thị D">
-        <div><div class="rev-name">Lê Thị D</div><div class="rev-loc">Đồng Nai · Tháng 9/2025</div></div>
+        <div><div class="rev-name">Lâm Diệu</div><div class="rev-loc">Đồng Nai · Tháng 9/2025</div></div>
       </div>
     </div>
   </div>
@@ -1104,27 +1116,51 @@ footer a:hover{color:var(--orange)}
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-grid">
-    <div>
-      <img class="footer-logo" src="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg" alt="VietKite Travel">
-      <p>Công ty Du lịch Cánh Diều Việt – VietKite Travel<br>Chuyên tour trong nước và quốc tế chất lượng cao, khởi hành từ TP.HCM.</p>
+  <div class="ft-grid">
+    <div class="ft-brand">
+      <img src="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg" alt="logo">
+      <p>VietKite Travel – Chuyên tổ chức tour du lịch quốc tế chuyên nghiệp, uy tín hơn 15 năm. Hành trình của bạn, niềm vui của chúng tôi.</p>
+      <div class="socials" style="margin-top:16px">
+        <a href="https://www.facebook.com/vietkite" title="Facebook">f</a>
+        <a href="tel:0912992447" title="Hotline">📞</a>
+        <a href="mailto:info@vietkite.com.vn" title="Email">@</a>
+      </div>
     </div>
-    <div>
+    <div class="ft-col">
+      <h4>Tour châu Á</h4>
+      <ul>
+        <li><a href="https://vietkite.com.vn/nhom_tour/tour-du-lich-lao.html">Tour Lào</a></li>
+        <li><a href="https://vietkite.com.vn/nhom_tour/thailand.html">Tour Thái Lan</a></li>
+        <li><a href="https://vietkite.com.vn/nhom_tour/cambodia-myanmar.html">Cambodia – Myanmar</a></li>
+        <li><a href="https://vietkite.com.vn/nhom_tour/han-quoc.html">Hàn Quốc</a></li>
+        <li><a href="https://vietkite.com.vn/nhom_tour/nhat-ban.html">Nhật Bản</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h4>Khám phá thêm</h4>
+      <ul>
+        <li><a href="https://vietkite.com.vn/nhom_tour/tour-kham-pha.html">Tour khám phá</a></li>
+        <li><a href="https://vietkite.com.vn/nhom_tour/tour-thien-nguyen.html">Tour thiện nguyện</a></li>
+        <li><a href="https://vietkite.com.vn/nhom_tour/khuyen-mai.html">Khuyến mãi</a></li>
+        <li><a href="https://vietkite.com.vn/nhom_tour/lien-tuyen-chau-au.html">Tour châu Âu</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
       <h4>Liên hệ</h4>
-      <p>📞 <a href="tel:0912992447">0912 992 447</a><br>
-      📧 <a href="mailto:info@vietkite.com.vn">info@vietkite.com.vn</a><br>
-      🌐 <a href="https://vietkite.com.vn" target="_blank">vietkite.com.vn</a></p>
-    </div>
-    <div>
-      <h4>Tour liên quan</h4>
-      <p><a href="index.html">Lào – Đông Bắc Thái 4N3Đ</a><br>
-      <a href="#">Lào – Luang Prabang 5N4Đ</a><br>
-      <a href="#">Campuchia – Angkor Wat 3N2Đ</a><br>
-      <a href="#">Đà Lạt – Mũi Né 4N3Đ</a></p>
+      <div class="ft-contact">
+        <strong>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ DU LỊCH VIETKITE</strong><br>
+        🆔 <strong>MST:</strong> 0311304593<br>
+        🌐 <a href="https://vietkite.com.vn">vietkite.com.vn</a><br>
+        ✉️ <a href="mailto:info@vietkite.com.vn">info@vietkite.com.vn</a><br>
+        📍 <strong>VP 1:</strong> 276 Nơ Trang Long, P. 12, Q. Bình Thạnh, TP.HCM<br>
+        📍 <strong>VP 2:</strong> 160/25/31 Bùi Đình Túy, P. 12, Q. Bình Thạnh, TP.HCM<br>
+        🕐 T2–CN: 8:00 – 20:00
+      </div>
     </div>
   </div>
-  <div class="footer-bottom">
-    © 2026 VietKite Travel – Công ty Du lịch Cánh Diều Việt. All rights reserved.
+  <div class="ft-bottom">
+    <span>© 2026 VietKite Travel. GP LHQT: xxxx/2010/TCDL-GP LHQT</span>
+    <span>Thiết kế dành riêng cho VietKite ♥</span>
   </div>
 </footer>
 
